@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.application.brahmi">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <permission
+        android:name="android.permission.CALL_PRIVILEGED"
+        android:protectionLevel="signature|privileged" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BRAHMI">
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".GetImageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".InsertImageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".GameWon"
+            android:exported="true" />
+        <activity
+            android:name=".PlayAgain"
+            android:exported="true" />
+        <activity
+            android:name=".TimeUp"
+            android:exported="true" />
+        <activity
+            android:name=".QuizActivity"
+            android:exported="true" />
+        <activity
+            android:name=".InsertQuestionsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".QuizMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DailyActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PillSchedule"
+            android:exported="true" />
+        <activity
+            android:name=".NewTaskActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PhotoAlbum"
+            android:exported="true" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="true"></activity>
+        <activity
+            android:name=".ProfilePage"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".CaretakerProfilePage"
+            android:exported="true" />
+        <activity
+            android:name=".CaretakerDashboard"
+            android:exported="true"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+        </activity>
+    </application>
+
+</manifest>
